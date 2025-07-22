@@ -1,0 +1,19 @@
+.agenda-img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.agenda-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* bikin gambar pas penuh dan tetap rapi */
+}
+
+.agenda-desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* max 3 baris */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}

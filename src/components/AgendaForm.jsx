@@ -12,9 +12,12 @@ export default function AgendaForm() {
 		gambar: null,
 	});
 
+	// ✅ Gunakan ENV agar fleksibel
+	const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 	const handlePasswordSubmit = (e) => {
 		e.preventDefault();
-		const correctPassword = "jurug123";
+		const correctPassword = "jurug123"; // (❗ nanti kita bahas cara amankan)
 		if (password === correctPassword) {
 			setAuthenticated(true);
 			setError("");
@@ -40,7 +43,9 @@ export default function AgendaForm() {
 		uploadData.append("gambar", formData.gambar);
 
 		try {
-			await axios.post("http://localhost:5000/api/agenda", uploadData);
+			await axios.post(`${API_URL}/api/agenda`, uploadData, {
+				headers: { "Content-Type": "multipart/form-data" },
+			});
 			alert("Agenda berhasil ditambahkan!");
 		} catch (err) {
 			console.error(err);

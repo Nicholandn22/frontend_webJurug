@@ -16,7 +16,7 @@ export default function InfoDesa() {
 					/>
 				</div>
 				<div className="col-md-6">
-					<h3>Profil Desa</h3>
+					<h3>Profil Desa Jurug</h3>
 					<p>
 						Desa Jurug terletak di Kalurahan Argosari, Kecamatan Sedayu,
 						Kabupaten Sleman, Yogyakarta. Desa ini menawarkan suasana pedesaan

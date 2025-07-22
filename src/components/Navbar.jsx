@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
-        <a className="navbar-brand" href="#">Desa Contoh</a>
+        <a className="navbar-brand" href="#">Desa Jurug</a>
         <button
           className="navbar-toggler"
           type="button"

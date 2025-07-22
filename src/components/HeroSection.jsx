@@ -15,7 +15,7 @@ export default function HeroSection() {
         textShadow: "2px 2px 4px #000"
       }}
     >
-      Selamat Datang di Website Resmi Desa Contoh
+      
     </div>
   );
 }
